@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Exo 2', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.text-color-index{
+    color: #130f40;
+    background: rgba(48, 51, 107,0.3);
+}
+
+.text-color-update{
+    color: #410130;
+    background: rgba(65, 1, 48,0.3);
+}
+
+.text-color-view{
+    color: #2c3e50;
+    background: rgba(44, 62, 80,0.3);
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+label{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+input{
+    width: 70%;
+    height: 50px;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+}
+
+a{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
