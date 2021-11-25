@@ -9,7 +9,7 @@
 body{
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .text-color-index{
@@ -41,7 +41,7 @@ input{
     height: 50px;
 }
 
-button{
+.button-group button{
     width: 200px;
     height: 50px;
 }
