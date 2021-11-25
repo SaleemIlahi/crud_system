@@ -6,7 +6,7 @@
                 <img src="images/pic-2.jpg" alt="studet-pic" />
             </div>
             <div class="col-7">
-                <form method="post" action="/student/update/<%= data._id %>" class="p-5">
+                <form method="post" action="/update/<%= data._id %>" class="p-5">
                     <div class="form-group my-4">
                         <label for="studentName" class="form-label">Update Student Name</label>
                         <input type="text" id="studentName" class="form-control" placeholder="Enter Your name" name="name" value="<%= data.name %>" />
@@ -21,7 +21,7 @@
                     </div>
                     <div class="button-group mt-5 d-flex justify-content-evenly">
                         <button type="submit" class="btn btn-primary">Update</button>
-                        <a href="/student/view" class="btn btn-primary d-flex flex-row align-items-center justify-content-center">View Student</a>
+                        <a href="/view" class="btn btn-primary d-flex flex-row align-items-center justify-content-center">View Student</a>
                     </div>
                 </form>
             </div>

@@ -18,7 +18,7 @@ class studentController {
             // Saving Document
             await doc.save()
 
-            res.redirect('/student/view')
+            res.redirect('/view')
         } catch (error) {
             console.log(error)
         }
@@ -28,7 +28,7 @@ class studentController {
     static updateDoc = async (req, res) => {
         try {
             await studentModel.findByIdAndUpdate(req.params.id,req.body)
-            res.redirect('/student/view')
+            res.redirect('/view')
         } catch (error) {
             console.log(error)
         }
@@ -46,7 +46,7 @@ class studentController {
     static deleteDoc = async (req, res) => {
         try {
             await studentModel.findByIdAndDelete(req.params.id)
-            res.redirect('/student/view')
+            res.redirect('/view')
         } catch (error) {
             console.log(error)
         }

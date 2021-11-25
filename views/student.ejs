@@ -22,12 +22,12 @@
                 <td><%= item.course%></td>
                 <td><%= item.percent%> %</td>
                 <td class="d-flex align-items-center justify-content-evenly">
-                  <form action="/student/update/<%= item._id %>" method="get">
+                  <form action="/update/<%= item._id %>" method="get">
                     <button type="submit" class="border-0">
                       <i class="fas fa-edit text-primary"></i>
                     </button>
                   </form>
-                  <form action="/student/delete/<%= item._id %>" method="post">
+                  <form action="/delete/<%= item._id %>" method="post">
                     <button class="border-0">
                       <i class="fas fa-trash-alt text-danger"></i>
                     </button>
@@ -37,7 +37,7 @@
             <% }) %>
           </tbody>
         </table>
-        <a href="/student" class="btn btn-primary d-flex justify-content-center m-auto">Back</a>
+        <a href="/" class="btn btn-primary d-flex justify-content-center m-auto">Back</a>
       </div>
     </div>
   </div>

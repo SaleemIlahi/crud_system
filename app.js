@@ -15,14 +15,14 @@ connectDB(DATABASE_URL)
 app.use(express.urlencoded({extended:false}))
 
 // Static Files
-app.use('/student',express.static(join(process.cwd(),'public')))
-app.use('/student/update',express.static(join(process.cwd(),'public')))
+app.use('/',express.static(join(process.cwd(),'public')))
+app.use('/update',express.static(join(process.cwd(),'public')))
 
 // Setting EJS Template
 app.set('view engine','ejs')
 
 // Load Routes
-app.use('/student',router)
+app.use('/',router)
 
 // Server listening
 app.listen(port, () => console.log(`Server Listening at http://localhost:${port}`))
